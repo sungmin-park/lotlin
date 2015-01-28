@@ -2,12 +2,12 @@ apply plugin: 'kotlin'
 
 version = '0.0.1'
 buildscript {
-  repositories {
-    mavenCentral()
-  }
-  dependencies {
-    classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:0.10.195'
-  }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:0.10.195'
+    }
 }
 
 
@@ -18,5 +18,5 @@ repositories {
 
 dependencies {
     testCompile 'junit:junit:4.12'
-  compile 'org.jetbrains.kotlin:kotlin-stdlib:0.10.195'
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:0.10.195'
 }
