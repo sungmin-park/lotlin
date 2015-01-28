@@ -3,7 +3,7 @@ package kr.redo.lotlin
 import org.junit.Test
 import kotlin.test.assertEquals
 
-public class LotlinTest {
+public class LotlinStringTest {
     Test fun testSlice() {
         val python = "Python"
         // slice
