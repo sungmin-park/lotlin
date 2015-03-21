@@ -4,7 +4,7 @@ import com.lotlin.sting.slice
 import org.junit.Test
 import kotlin.test.assertEquals
 
-public class LotlinStringTest {
+public class StringTest {
     Test fun testSlice() {
         val python = "Python"
         // slice
