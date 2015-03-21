@@ -1,5 +1,6 @@
-package kr.redo.lotlin
+package com.lotiln
 
+import org.junit.Assert
 import org.junit.Test
 import kotlin.test.assertEquals
 
@@ -9,6 +10,9 @@ public class LotlinJavaClassTest {
             val i = 0
             val s = "string"
         }
+
+        Assert.assertEquals(test.i, 0)
+        Assert.assertEquals(test.s, "string")
 
         assertEquals(
                 listOf(test.javaClass.getMethod("getS")),

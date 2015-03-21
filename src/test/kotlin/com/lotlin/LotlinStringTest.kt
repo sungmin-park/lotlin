@@ -1,5 +1,6 @@
-package kr.redo.lotlin
+package com.lotiln
 
+import com.lotlin.sting.slice
 import org.junit.Test
 import kotlin.test.assertEquals
 
