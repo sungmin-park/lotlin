@@ -13,3 +13,19 @@ fun String.slice(start: Int = 0, end: Int? = null): String {
     val till = end ?: length()
     return this.substring(start, till)
 }
+
+
+fun String.join(vararg words: String): String {
+    val builder = StringBuilder()
+    words.forEachIndexed { i, s ->
+        if (i != 0) {
+            builder.append(this)
+        }
+        builder.append(s)
+    }
+    return builder.toString()
+}
+
+fun String.join(words: Collection<String>): String {
+    return this.join(*words.copyToArray())
+}

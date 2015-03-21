@@ -1,6 +1,8 @@
 package com.lotiln
 
+import com.lotlin.sting.join
 import com.lotlin.sting.slice
+import org.junit.Assert
 import org.junit.Test
 import kotlin.test.assertEquals
 
@@ -21,5 +23,11 @@ public class StringTest {
         // handle index gracefully
         assertEquals("on", python.slice(4, 42))
         assertEquals("", python.slice(42))
+    }
+
+    Test fun join() {
+        Assert.assertEquals("", ", ".join())
+        Assert.assertEquals("1, 2", ", ".join("1", "2"))
+        Assert.assertEquals("1, 2", ", ".join(listOf("1", "2")))
     }
 }
